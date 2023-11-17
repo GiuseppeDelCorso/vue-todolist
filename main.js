@@ -36,15 +36,11 @@ const lista = {
         fatto(key){
 
             this.listaAzioni[key].flag = this.barratura = true
-            
-            
-            
-
             console.log("fatto")
            
         },
         add(){
-            console.log(this.nuovaAzione)
+
 
             let contenutoNuovaAzione = {
                 text : this.nuovaAzione,

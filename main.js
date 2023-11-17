@@ -5,7 +5,7 @@ const lista = {
     data: function () {
         return {
             barratura: false,
-            index : '0',
+            nuovaAzione:"",
             listaAzioni:[
 
                 {
@@ -33,14 +33,30 @@ const lista = {
         }
     },
     methods: {
-        fatto(){
-            let index = '0'
-            this.listaAzioni[index].flag = true
+        fatto(key){
+
+            this.listaAzioni[key].flag = this.barratura = true
             
+            
+            
+
             console.log("fatto")
            
+        },
+        add(){
+            console.log(this.nuovaAzione)
+
+            let contenutoNuovaAzione = {
+                text : this.nuovaAzione,
+                flag: false,
+            }
+            this.listaAzioni.push( contenutoNuovaAzione)
         }
+
+
+
     }
+
 }
 
 

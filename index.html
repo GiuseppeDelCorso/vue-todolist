@@ -11,13 +11,14 @@
 
     <div id="app">
         <ul>
-            <li v-for="testo in listaAzioni" :class="{ barratura }" >{{ testo.text }} 
-                <p v-for="input in listaAzioni" @click="fatto()" >{{ input.flag }}</p>
+            <li v-for="(value, key) in listaAzioni" :class="{ barratura }" >{{ value.text }} 
+                <p @click="fatto(key)" >{{ value.flag }}</p>
                 
             </li>
             
         </ul>
-
+        <input type="text" v-model="nuovaAzione">
+        <button @click="add()" type="text" name="" id="">Aggiungi azione</button>
         
     </div>
 

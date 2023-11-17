@@ -11,8 +11,8 @@
 
     <div id="app">
         <ul>
-            <li v-for="testo in listaAzioni" >{{ testo.text }} 
-                <input @click="fatto()" :class="{barratura}" type="checkbox">
+            <li v-for="testo in listaAzioni" :class="{ barratura }" >{{ testo.text }} 
+                <p @click="fatto()" >{{ listaAzioni[index].flag }}</p>
                 
             </li>
             

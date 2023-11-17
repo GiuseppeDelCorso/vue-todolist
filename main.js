@@ -5,7 +5,7 @@ const lista = {
     data: function () {
         return {
             barratura: false,
-            index: 0,
+            index : '0',
             listaAzioni:[
 
                 {
@@ -15,11 +15,11 @@ const lista = {
                 },
                 {
                     text: "Aprire Il Broswer",
-                    flag: true,
+                    flag: false,
                 },
                 {
                     text: "Digitare Youtube",
-                    flag: false,
+                    flag: true,
                 },
                 {
                     text: "Segliere Video",
@@ -34,8 +34,9 @@ const lista = {
     },
     methods: {
         fatto(){
+            let index = '0'
+            this.listaAzioni[index].flag = true
             
-            this.barratura = true
             console.log("fatto")
            
         }

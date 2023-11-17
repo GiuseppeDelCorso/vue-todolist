@@ -12,7 +12,7 @@
     <div id="app">
         <ul>
             <li v-for="testo in listaAzioni" :class="{ barratura }" >{{ testo.text }} 
-                <p @click="fatto()" >{{ listaAzioni[index].flag }}</p>
+                <p v-for="input in listaAzioni" @click="fatto()" >{{ input.flag }}</p>
                 
             </li>
             

@@ -31,6 +31,14 @@ const lista = {
 
         }
     },
+    methods: {
+        fatto(){
+            
+            
+            console.log("fatto")
+           
+        }
+    }
 }
 
 

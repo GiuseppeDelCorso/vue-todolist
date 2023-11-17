@@ -35,7 +35,17 @@ const lista = {
     methods: {
         fatto(key){
 
-            this.listaAzioni[key].flag = this.barratura = true
+            if (this.listaAzioni[key].flag == true){
+
+                
+                this.listaAzioni[key].flag = false
+
+            }else(this.listaAzioni[key].flag == false)
+            
+            {
+                this.listaAzioni[key].flag = true
+            }
+
             console.log("fatto")
            
         },

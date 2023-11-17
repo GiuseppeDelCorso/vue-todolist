@@ -15,7 +15,7 @@ const lista = {
                 },
                 {
                     text: "Aprire Il Broswer",
-                    flag: false,
+                    flag: true,
                 },
                 {
                     text: "Digitare Youtube",
